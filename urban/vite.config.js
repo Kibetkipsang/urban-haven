@@ -2,7 +2,7 @@ export default {
   server: {
     watch: {
       usePolling: true,
-      interval: 100, 
+      interval: 100,
     },
   },
 };
