@@ -1,14 +1,16 @@
 
 :root {
   --primary-color-white: #ffffff;
-  --secondary-color-light-grey: rgb(221, 220, 220);
+  --secondary-color-light-grey: rgb(245, 242, 242);
   --text-color-grey: rgb(41, 40, 40);
   --text-color-red: #DC2626;
   --text-color-green: #16A34A;
   --text-color-black: #000000;
-  --headings-font-family: "Oswald", sans-serif;
+  --headings-font-family: "Alfa Slab One", serif;
   --primary-font-family: "Poppins", sans-serif;
   --secondary-font-family: "Montserrat", sans-serif;
+  --logo-title-font-family: "Oswald", sans-serif;
+  --card-title-font-family: "Fredoka", sans-serif;
 }
 
  
@@ -89,7 +91,8 @@ header{
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  font-family: var(--headings-font-family);
+  font-family: var(--logo-title-font-family);
+  font-weight: 700;
   color: var(--text-color-red);
 }
 
@@ -174,10 +177,15 @@ header{
 }
 
 .hero-content h1 {
-  font-family: var(--secondary-color-light-grey);
-  font-size: 4rem;
-  font-weight: 500;
+  font-family: var(--headings-font-family);
+  font-family: serif;
+  font-size: 5rem;
+  font-weight: 900;
   margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-family: var(--headings-font-family);
 }
 
 .hero-content h3 {
@@ -222,7 +230,7 @@ header{
 }
 
 .about-title{
-  font-family: var(--headings-font-family);
+  font-family: var(--secondary-font-family);
   font-size: 3rem;
   font-weight: 600;
   color: var(--text-color-red);
@@ -244,7 +252,7 @@ header{
 }
 
 .mini-title{
-  font-family: var(--headings-font-family);
+  font-family: var(--secondary-font-family);
   font-size: 1.7rem;
   color: var(--text-color-green);
   font-weight: 700;
@@ -274,9 +282,8 @@ header{
 
 .about-images figure figcaption {
   position: absolute;
-  bottom: 0;           /* stick to the bottom of figure */
-  left: 50%;
-  transform: translateX(-50%); /* center horizontally */
+  bottom: 0;          
+  transform: translateX(-50%); 
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 0.5rem 1rem;
@@ -339,4 +346,97 @@ figure .image1  {
   .about-images {
     flex: 1 1 100%;
   }
+}
+
+/* spaces and prices styling */
+
+.hero-content h1 {
+  font-family: var(--headings-font-family);
+  font-family: serif;
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.spaces-prices {
+  margin-top: 2rem;
+  display: flex;
+  background-color: var(--secondary-color-light-grey);
+}
+
+.spaces-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.space-card {
+  background-color: var(--primary-color-white);
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.space-card:hover{
+  transform: scale(1.05);
+  transition: transform 1s ease, box-shadow 1s ease ;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-card {
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.1rem;
+  
+}
+
+.card-title {
+  font-family: var(--primary-font-family);
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: .4rem;
+}
+
+.card-description {
+  font-family: var(--primary-font-family);
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.3rem;
+}
+
+.price{
+  font-family: var(--secondary-font-family);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-color-green);
+}
+
+.btn2 {
+  padding: 0.8rem 1.8rem;
+  font-size: 1.5rem;
+  border: none;
+  background-color: var(--text-color-red);
+  color: var(--primary-color-white);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.4s ease ;
+}
+
+.btn2:hover{
+  background-color: #c22121;
+  transform: scale(1.05);
 }
