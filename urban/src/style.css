@@ -238,6 +238,8 @@ header {
   font-family: var(--primary-font-family);
   font-size: 1.3rem;
   font-style: italic;
+  text-align: center;
+
 }
 
 .mini-title {
@@ -383,8 +385,7 @@ figure .image1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin: 4rem;
 }
 
 .space-card {
@@ -392,6 +393,7 @@ figure .image1 {
   display: flex;
   flex-direction: column;
   width: 25%;
+  height: 80vh;
   margin: 1rem;
   border-radius: 1rem;
   overflow: hidden;
@@ -410,6 +412,7 @@ figure .image1 {
   width: 100%;
   border-radius: 1rem;
   overflow: hidden;
+  height: 100%;
 }
 
 .card-content {
@@ -425,6 +428,7 @@ figure .image1 {
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.2rem;
+  color: var(--text-color-green);
 }
 
 .card-description {
